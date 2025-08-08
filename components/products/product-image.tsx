@@ -12,7 +12,7 @@ const ProductImage = ({ images }: { images: string[] }) => {
           src={images[current]}
           alt="product.image"
           width={1000}
-          height={1000}
+          height={900}
           className="min-h-[200px] object-cover object-center"
         />
         <div className="flex">
