@@ -7,7 +7,7 @@ import { Product } from "@/types";
 const ProductCard = ({ product }: { product: Product }) => {
   return (
     <div>
-      <Card className="w-full ">
+      <Card className="w-full h-screen">
         <CardHeader className=" rounded-sm">
           <Link href={`/product/${product.slug}`}>
             <Image

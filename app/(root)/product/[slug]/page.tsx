@@ -17,7 +17,7 @@ const productDetailsPage = async (props: {
   return (
     <>
       <section>
-        <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-5 gap-8 h-screen">
+        <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-5 gap-8">
           {/* ----image grid-- */}
           <div className="col-span-2">
             <ProductImage images={product.images} />
