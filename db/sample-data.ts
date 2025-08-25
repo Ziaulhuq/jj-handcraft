@@ -1,10 +1,10 @@
 const sampleData = {
   products: [
     {
-      name: "Handcraft Mobile Bag",
-      slug: "handcraft-mobile-bag",
+      name: "Crochet Mobile Bag",
+      slug: "Crochet-mobile-bag",
       category: "Women's mobile bag",
-      description: "Classic Polo style with modern comfort",
+      description: "Classic modern side mobile bag",
       images: [
         "/images/sample-products/p1-1.jpg",
         "/images/sample-products/p1-2.jpg",
@@ -19,8 +19,8 @@ const sampleData = {
       banner: "banner-1.jpg",
     },
     {
-      name: "Handcraft Shoulder Bag",
-      slug: "handcraft-shoulder-bag",
+      name: "Crochet women's side Bag",
+      slug: "Crochet-women's-side-Bag",
       category: "Women's mobile side bag",
       description: "Timeless style and premium comfort",
       images: [
@@ -37,10 +37,10 @@ const sampleData = {
       banner: "banner-2.jpg",
     },
     {
-      name: "Side Bag Sling",
-      slug: "side-bag-sling",
-      category: "Women's sling bag",
-      description: "A perfect blend of sophistication and comfort",
+      name: "Side water bottle Sling bag",
+      slug: "Side-water-bottle-Sling-bag",
+      category: "Water bottle bag",
+      description: "Modern classic sling bag",
       images: [
         "/images/sample-products/p3-1.jpg",
         "/images/sample-products/p3-2.jpg",
@@ -56,10 +56,10 @@ const sampleData = {
       banner: null,
     },
     {
-      name: "Hair Band",
-      slug: "hair-band",
-      category: "Women's hair band",
-      description: "Streamlined design with flexible stretch fabric",
+      name: "Womens side bag",
+      slug: "Womens-side-bag",
+      category: "Women's side bag",
+      description: "Streamlined design with flexible stretch",
       images: [
         "/images/sample-products/p4-1.jpg",
         "/images/sample-products/p4-2.jpg",
@@ -75,10 +75,10 @@ const sampleData = {
       banner: null,
     },
     {
-      name: "Sidebag Sling",
-      slug: "sidebag-sling",
-      category: "Women's side bag sling",
-      description: "Iconic Polo design with refined oxford fabric",
+      name: "Girls baby crochet cloths",
+      slug: "Girls-baby-crochet-cloths",
+      category: "Girls baby crochet cloths",
+      description: "Dress fully made by Crochet",
       images: [
         "/images/sample-products/p5-1.jpg",
         "/images/sample-products/p5-2.jpg",
@@ -93,10 +93,10 @@ const sampleData = {
       banner: null,
     },
     {
-      name: "Bag Keychain",
-      slug: "bag-keychain",
-      category: "keychain for bag",
-      description: "Soft, stylish, and perfect for laid-back days",
+      name: "Crochet Keychain and Money holder",
+      slug: "Crochet-Keychain-and-Money-holder",
+      category: "Keychain and Money bag",
+      description: "Soft, stylish, and perfect for money holder",
       images: [
         "/images/sample-products/p6-1.jpg",
         "/images/sample-products/p6-2.jpg",
