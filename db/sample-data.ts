@@ -26,6 +26,7 @@ const sampleData = {
       images: [
         "/images/sample-products/p2-1.jpg",
         "/images/sample-products/p2-2.jpg",
+        "/images/sample-products/p2-3.jpg",
       ],
       price: 32.8,
       brand: "Crochet",
@@ -43,6 +44,8 @@ const sampleData = {
       images: [
         "/images/sample-products/p3-1.jpg",
         "/images/sample-products/p3-2.jpg",
+        "/images/sample-products/p3-3.jpg",
+        "/images/sample-products/p3-4.jpg",
       ],
       price: 8,
       brand: "Crochet",
@@ -60,6 +63,8 @@ const sampleData = {
       images: [
         "/images/sample-products/p4-1.jpg",
         "/images/sample-products/p4-2.jpg",
+        "/images/sample-products/p4-3.jpg",
+        "/images/sample-products/p4-4.jpg",
       ],
       price: 5,
       brand: "Crochet",
@@ -77,6 +82,7 @@ const sampleData = {
       images: [
         "/images/sample-products/p5-1.jpg",
         "/images/sample-products/p5-2.jpg",
+        "/images/sample-products/p5-3.jpg",
       ],
       price: 8,
       brand: "Crochet",
@@ -94,6 +100,7 @@ const sampleData = {
       images: [
         "/images/sample-products/p6-1.jpg",
         "/images/sample-products/p6-2.jpg",
+        "/images/sample-products/p6-3.jpg",
       ],
       price: 7,
       brand: "Crochet",
