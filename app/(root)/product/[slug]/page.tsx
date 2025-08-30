@@ -48,7 +48,7 @@ const productDetailsPage = async (props: {
           {/* ----- cart area ----*/}
           <div>
             <Card>
-              <CardContent className="p-4">
+              <CardContent className="px-2 py-2 flex justify-between flex-col sm:flex sm:justify-between">
                 <div className="mb-2 flex justify-between">
                   <div>Price</div>
                   <div>

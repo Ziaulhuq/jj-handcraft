@@ -13,7 +13,7 @@ const roboto = Roboto({
 const Header = () => {
   return (
     <header className="mb-6">
-      <div className="flex justify-between border-b w-full py-2 h-full">
+      <div className="flex justify-between items-center-safe border-b w-full py-2 h-full">
         <div className="flex justify-center items-center gap-4">
           <Link href="/">
             <Image
