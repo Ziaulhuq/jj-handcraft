@@ -1,5 +1,6 @@
 import {
   Card,
+  CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
@@ -7,6 +8,7 @@ import {
 import Image from "next/image";
 import { APP_NAME } from "@/lib/constants";
 import Link from "next/link";
+import SignInForm from "./signInform";
 
 const signInPage = () => {
   return (
@@ -25,6 +27,9 @@ const signInPage = () => {
           <CardTitle className="text-center font-semibold">signIn</CardTitle>
           <CardDescription>sign in to your account</CardDescription>
         </CardHeader>
+        <CardContent>
+          <SignInForm />
+        </CardContent>
       </Card>
     </div>
   );
