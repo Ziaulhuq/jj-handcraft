@@ -27,7 +27,7 @@ const Header = () => {
           </Link>
           <Link href="/">
             <span className={`hidden md:block ${roboto.className}`}>
-              JJ Handmade
+              JJ Handmade craft
             </span>
           </Link>
         </div>
