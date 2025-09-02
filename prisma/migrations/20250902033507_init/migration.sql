@@ -26,8 +26,9 @@ CREATE TABLE "public"."User" (
     "emailVerified" TIMESTAMP(6),
     "image" TEXT,
     "password" TEXT,
-    "row" TEXT NOT NULL DEFAULT 'user',
-    "address" JSON NOT NULL,
+    "role" TEXT NOT NULL DEFAULT 'user',
+    "address" JSON,
+    "paymentMethod" TEXT,
     "createdAt" TIMESTAMP(6) NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "updatedAt" TIMESTAMP(3) NOT NULL,
 
