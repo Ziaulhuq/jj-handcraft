@@ -14,11 +14,11 @@ const SearchMenu = () => {
         <input
           type="search"
           placeholder="Search..."
-          className="border-1 border-gray-200 px-1.5 py-1 font-medium text-sm rounded-md outline-0"
+          className="border-1 px-1.5 py-1 font-medium text-sm rounded-md outline-0"
         />
       </span>
       <span>
-        <Search className=" bg-gray-900 rounded text-sm h-[27px] w-[27px] p-0.5 text-white cursor-pointer" />
+        <Search className=" bg-gray-900 rounded h-[27px] w-[27px] p-1 text-white cursor-pointer" />
       </span>
 
       {/* <span>

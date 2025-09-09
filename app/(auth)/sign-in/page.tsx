@@ -9,8 +9,20 @@ import Image from "next/image";
 import { APP_NAME } from "@/lib/constants";
 import Link from "next/link";
 import SignInForm from "./signInform";
+import { auth } from "@/auth";
+import { redirect } from "next/navigation";
+import { Metadata } from "next";
 
-const signInPage = () => {
+export const metadata: Metadata = {
+  title: "Sign In",
+};
+
+const SignInPage = async () => {
+  const session = await auth();
+
+  if (session) {
+    return redirect("/");
+  }
   return (
     <div className="w-full max-w-sm mx-auto">
       <Card>
@@ -24,7 +36,7 @@ const signInPage = () => {
               priority={true}
             />
           </Link>
-          <CardTitle className="text-center font-semibold">signIn</CardTitle>
+          <CardTitle className="text-center font-semibold">Sign In</CardTitle>
           <CardDescription>sign in to your account</CardDescription>
         </CardHeader>
         <CardContent>
@@ -35,4 +47,4 @@ const signInPage = () => {
   );
 };
 
-export default signInPage;
+export default SignInPage;
