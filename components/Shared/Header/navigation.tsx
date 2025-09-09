@@ -22,7 +22,7 @@ const Navigation = () => {
           </Link>
         </Button>
         <Button asChild>
-          <Link href="/sign-in" className="flex gap-2">
+          <Link href="/signIn" className="flex gap-2">
             <UserIcon />
             <span>sign In</span>
           </Link>
@@ -43,7 +43,7 @@ const Navigation = () => {
             </Button>
             <SheetDescription>
               <Button asChild>
-                <Link href="/sign-in" className="flex gap-2">
+                <Link href="/signIn" className="flex gap-2">
                   <UserIcon />
                   <span>sign In</span>
                 </Link>
