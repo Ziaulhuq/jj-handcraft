@@ -21,7 +21,7 @@ CREATE TABLE "public"."Product" (
 -- CreateTable
 CREATE TABLE "public"."User" (
     "id" UUID NOT NULL DEFAULT gen_random_uuid(),
-    "name" TEXT NOT NULL DEFAULT 'NO_NMAE',
+    "name" TEXT NOT NULL DEFAULT 'NO_NAME',
     "email" TEXT NOT NULL,
     "emailVerified" TIMESTAMP(6),
     "image" TEXT,
