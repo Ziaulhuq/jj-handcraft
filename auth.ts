@@ -6,8 +6,8 @@ import { compareSync } from "bcrypt-ts-edge";
 
 export const config = {
   pages: {
-    signIn: "/sign-in",
-    error: "/sign-in",
+    signIn: "/signIn",
+    error: "/signIn",
   },
   Session: {
     strategy: "jwt",
