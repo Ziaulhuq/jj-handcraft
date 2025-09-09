@@ -3,7 +3,7 @@ const SearchMenu = () => {
   return (
     <div className=" flex gap-0.5 justify-between items-center">
       <span>
-        <select className="w-max p-1.5 border-1 border-gray-200 rounded-md text-sm outline-0">
+        <select className="w-max px-1.5 py-1  border-1 border-gray-200 rounded-md text-sm outline-0">
           <option value="selected">All Products</option>
           <option>Bags</option>
           <option>Hair Band</option>
@@ -14,7 +14,7 @@ const SearchMenu = () => {
         <input
           type="search"
           placeholder="Search..."
-          className="border-1 px-2 font-medium py-1 text-[14px] rounded-md outline-0"
+          className="border-1 border-gray-200 px-1.5 py-1 font-medium text-sm rounded-md outline-0"
         />
       </span>
       <span>
