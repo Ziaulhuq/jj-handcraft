@@ -7,10 +7,10 @@ import Link from "next/link";
 import { signInDefaulValues } from "@/lib/constants";
 import { useActionState } from "react";
 import { useFormStatus } from "react-dom";
-import { signInwithCredentials } from "@/lib/actions/user.action";
+import { signInWithCredentials } from "@/lib/actions/user.action";
 
 const SignInForm = () => {
-  const [data, action] = useActionState(signInwithCredentials, {
+  const [data, action] = useActionState(signInWithCredentials, {
     success: false,
     message: "",
   });
@@ -70,7 +70,7 @@ const SignInForm = () => {
             <div className="text-center text-destructive">{data.message}</div>
           )}
 
-          <div className="text-center font-medium text-sm">
+          <div className="text-center font-medium text-sm text-muted-foreground">
             Don&apos;t have an account?{" "}
             <Link href="/sign-up" target="_self">
               <b>Sign up</b>
