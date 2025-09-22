@@ -48,16 +48,16 @@ const SignInForm = () => {
             />
           </div>
           <div>
-            <Label htmlFor="Password" className="mb-2">
+            <Label htmlFor="password" className="mb-2">
               Password
             </Label>
             <Input
               id="password"
-              type="Password"
-              name="Password"
+              type="password"
+              name="password"
               required
               className="outline-0"
-              autoComplete="Password"
+              autoComplete="password"
               defaultValue={signInDefaulValues.password}
             />
           </div>
