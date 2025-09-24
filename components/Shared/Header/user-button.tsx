@@ -1,14 +1,6 @@
 import Link from "next/link";
 import { auth } from "@/auth";
-import { signOutUser } from "@/lib/actions/user.action";
 import { Button } from "@/components/ui/button";
-import {
-  DropdownMenu,
-  DropdownMenuItem,
-  DropdownMenuContent,
-  DropdownMenuLabel,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
 import { UserIcon } from "lucide-react";
 
 const UserButton = async () => {
