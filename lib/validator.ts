@@ -44,6 +44,5 @@ export const signUpFormSchema = z
     data.password === data.confirmPassword,
       {
         message: "password doesn't match",
-        path: ["confirmPassword"],
       };
   });
