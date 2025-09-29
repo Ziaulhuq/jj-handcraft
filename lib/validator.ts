@@ -30,16 +30,16 @@ export const signInFormSchema = z.object({
 });
 
 //schema for signUp
-export const signUpFormSchema = z.object({
-  name: z.string().min(3, "name must be atleast 3 characters long"),
-  email: z.string().email("invalid email address"),
-  password: z.string().min(6, "Password must be atleast 6 characters long"),
-  confirmPassword: z
-    .string()
-    .min(6, "Confirm password must be atleast 6 characters long"),
-});
-// .refine((data) => {
-//   data.password === data.confirmPassword,
-//     {
-//       message: "password doesn't match",
-//     };
+export const signUpFormSchema = z
+  .object({
+    name: z.string().min(3, "name must be atleast 3 characters long"),
+    email: z.string().email("invalid email address"),
+    password: z.string().min(6, "Password must be atleast 6 characters long"),
+    confirmPassword: z
+      .string()
+      .min(6, "Confirm password must be atleast 6 characters long"),
+  })
+  .refine((data) => data.password === data.confirmPassword, {
+    message: "password doesn't match",
+    path: ["confirmPassword"],
+  });
