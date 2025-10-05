@@ -17,7 +17,7 @@ const productDetailsPage = async (props: {
   return (
     <>
       <section>
-        <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-5 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
           {/* ----image grid-- */}
           <div className="col-span-2">
             <ProductImage images={product.images} />
@@ -48,7 +48,7 @@ const productDetailsPage = async (props: {
           {/* ----- cart area ----*/}
           <div>
             <Card>
-              <CardContent className="px-2 py-2 flex justify-between flex-col sm:flex sm:justify-between">
+              <CardContent className="flex flex-col justify-center">
                 <div className="mb-2 flex justify-between">
                   <div>Price</div>
                   <div>
