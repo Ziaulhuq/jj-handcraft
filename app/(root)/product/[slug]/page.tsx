@@ -1,6 +1,6 @@
 import { getProductBySlug } from "@/lib/actions/products.action";
 import { notFound } from "next/navigation";
-import { Button } from "@/components/ui/button";
+// import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import ProductPrice from "@/components/products/product-price";
 import { Badge } from "@/components/ui/badge";
