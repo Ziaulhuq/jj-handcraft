@@ -5,6 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import ProductPrice from "@/components/products/product-price";
 import { Badge } from "@/components/ui/badge";
 import ProductImage from "@/components/products/product-image";
+import AddToCart from "@/components/Shared/Header/add-to-cart";
 
 const productDetailsPage = async (props: {
   params: Promise<{ slug: string }>;
@@ -17,14 +18,14 @@ const productDetailsPage = async (props: {
   return (
     <>
       <section>
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-6 gap-14">
           {/* ----image grid-- */}
           <div className="col-span-2">
             <ProductImage images={product.images} />
           </div>
 
           {/* ----- main --- */}
-          <div className="col-span-2 p-5">
+          <div className="col-span-2 p-6">
             <div className="flex flex-col gap-6">
               <p>
                 {product.brand} {product.category}
@@ -33,7 +34,7 @@ const productDetailsPage = async (props: {
               <p>
                 {product.rating} of {product.numReviews} Reviews
               </p>
-              <div className="flex flex-col sm:flex-row sm:items-center">
+              <div className="flex flex-col sm:flex-row gap-3 sm:items-center">
                 <ProductPrice
                   value={Number(product.price)}
                   className="w-24 bg-green-100 font-medium rounded-full px-5 py-2 text-green-800 "
@@ -46,9 +47,9 @@ const productDetailsPage = async (props: {
             </div>
           </div>
           {/* ----- cart area ----*/}
-          <div>
+          <div className="col-span-2">
             <Card>
-              <CardContent className="flex flex-col justify-center">
+              <CardContent className="">
                 <div className="mb-2 flex justify-between">
                   <div>Price</div>
                   <div>
@@ -65,7 +66,16 @@ const productDetailsPage = async (props: {
                 </div>
                 {product.stock > 0 && (
                   <div className="flex justify-center mt-2">
-                    <Button className="w-full">Add To Cart</Button>
+                    <AddToCart
+                      item={{
+                        productId: product.id,
+                        name: product.name,
+                        slug: product.slug,
+                        price: product.price,
+                        qty: 1,
+                        image: product.images![0],
+                      }}
+                    />
                   </div>
                 )}
               </CardContent>
