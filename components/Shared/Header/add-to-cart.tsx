@@ -4,19 +4,13 @@ import { Button } from "@/components/ui/button";
 import { PlusIcon } from "lucide-react";
 import { Cart } from "@/types";
 import { toast } from "sonner";
-import { adddItemToCart } from "@/lib/actions/cart.action";
+
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 
 const AddToCart = ({ item }: { item: Cart }) => {
   const router = useRouter();
   const handleAddToCart = async () => {
-    const res = await adddItemToCart(item);
-
-    if (!res.success) {
-      return;
-    }
-
     //handle success to cart
     toast(`${item.name} added to cart`, {
       description: "Sunday, December 03, 2023 at 9:00 AM",
