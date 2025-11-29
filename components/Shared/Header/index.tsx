@@ -17,10 +17,10 @@ const Header = () => {
         <div className="flex justify-center items-center gap-4">
           <Link href="/">
             <Image
-              src="/jj-logo.png"
+              src="/JJ_logo.png"
               alt={`${APP_NAME} logo`}
-              width={70}
-              height={70}
+              width={110}
+              height={110}
               priority={true}
               className="flex"
             ></Image>
