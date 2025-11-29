@@ -32,7 +32,7 @@ const SignUpPage = async (props: {
         <CardHeader className="flex justify-center items-center flex-col">
           <Link href={"/"}>
             <Image
-              src="/jj-logo.png"
+              src="/JJ_logo2.png"
               alt={`${APP_NAME} logo`}
               width={100}
               height={100}
